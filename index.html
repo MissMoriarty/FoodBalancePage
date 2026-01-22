@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBalance2026 | Alimentación Saludable</title>
+    <style>
+        /* Estilos Generales */
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #d9edda;
+            --accent-color: #ff6f00;
+            --text-dark: #333;
+            --text-light: #f4f4f4;
+            --bg-light: #fff;
+            --bg-gray: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--secondary-color); 
+        }
+
+        /* Encabezado (Hero Section) */
+        header {
+            
+            background-image: url(upscalemedia-transformed.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #e65100;
+        }
+
+        /* Secciones Comunes */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        /* Importancia */
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--bg-gray);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            border-color: #ff6f00;
+        }
+
+        /* Estadísticas México */
+        .stats-section {
+            background-color: var(--primary-color);
+            color: white;
+            width: 100%;
+            max-width: 100%; /* Full width background */
+        }
+        
+        .stats-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stats-content h2 {
+            color: white;
+        }
+
+        .stat-box {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid var(--accent-color);
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* Recomendaciones */
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            background: #fff;
+            border-left: 5px solid var(--primary-color);
+            margin: 15px 0;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            .stat-box { width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Alimentación Saludable</h1>
+        <p>Invierte en tu salud, invierte en tu futuro.</p>
+        <a href="#recomendaciones" class="cta-button">Ver Recomendaciones</a>
+    </header>
+
+    <section id="importancia">
+        <h2>¿Por qué es importante?</h2>
+        <div class="importance-grid">
+            <div class="card">
+                <h3>🔋 Energía Vital</h3>
+                <p>Una dieta equilibrada proporciona la energía necesaria para trabajar, estudiar y disfrutar de la vida sin fatiga crónica.</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ Escudo Protector</h3>
+                <p>Fortalece el sistema inmunológico, ayudando a prevenir enfermedades estacionales e infecciones recurrentes.</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Salud Mental</h3>
+                <p>Existe una conexión directa entre el intestino y el cerebro. Comer bien reduce el riesgo de ansiedad y depresión.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-content">
+            <h2>La Realidad en México</h2>
+            <p>Datos recientes de la ENSANUT revelan un panorama que debemos cambiar:</p>
+            
+            <div class="stat-box">
+                <span class="stat-number">75%</span>
+                <p>de los adultos padecen sobrepeso u obesidad.</p>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-number">#1</span>
+                <p>México es uno de los mayores consumidores de bebidas azucaradas en el mundo.</p>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-number">10.3%</span>
+                <p>de la población adulta vive con diabetes diagnosticada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recomendaciones">
+        <h2>Guía para Mejorar tu Alimentación</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Pequeños cambios generan grandes resultados. Aquí tienes pasos prácticos:</p>
+        
+        <ul class="tips-list">
+            <li>
+                <strong>🥗 Adopta el "Plato del Bien Comer":</strong> Asegúrate de que la mitad de tu plato sean verduras y frutas, un cuarto cereales integrales y el otro cuarto leguminosas o alimentos de origen animal.
+            </li>
+            <li>
+                <strong>💧 La Jarra del Buen Beber:</strong> El agua simple debe ser tu bebida principal (6 a 8 vasos al día). Evita refrescos y jugos procesados.
+            </li>
+            <li>
+                <strong>🚫 Reduce los Ultraprocesados:</strong> Revisa los sellos de advertencia (Exceso de Azúcares, Sodio, Grasas). Si tiene muchos sellos, consúmelo esporádicamente.
+            </li>
+            <li>
+                <strong>🕒 Horarios Regulares:</strong> Intenta comer cada 3 o 4 horas para mantener tu metabolismo activo y evitar atracones por hambre excesiva.
+            </li>
+            <li>
+                <strong>🌶️ Cocina en Casa:</strong> La comida casera te permite controlar la calidad del aceite, la sal y la higiene de tus alimentos.
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; Food Balance 2026. Información con fines educativos.</p>
+    </footer>
+
+</body>
+</html>
